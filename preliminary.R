@@ -27,4 +27,7 @@ preliminary_operations <- function(wd = getwd()) {
   
   # Add the folder to gitignore. The datasets are huge, it's not a good idea to commit them on GitHub.
   write('final', file='.gitignore', append=TRUE)
+  
+  # Delete function from environment
+  rm(preliminary_operations)
 }
